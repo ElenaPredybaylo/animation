@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.wrapper {
+  padding-top: 100px;
+  height: 100vh;
+  /*background-image: linear-gradient(45deg, aqua, red, blue);*/
+  /*background-image: linear-gradient(aqua 100px, red 300px, blue 500px);*/
+  background-image: linear-gradient(aqua 20%, aqua 30%, red 30%, red 80%, blue 80%);
+  /*background-image: url(img/delfin.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;*/
+  /*background: url(img/delfin.jpg) center/cover no-repeat; /*составное свойство позиция и размер через слеш*/
+}
+
+.block {
+  background-color: aqua;
+  border: 2px solid blue;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in 1s;
+  /*animation: run 5s ease-in 1s alternate 2;*/
+}
+
+/*@keyframes run {
+  0% {
+    transform: translateX(0) rotate(45deg);
+  }
+  50% {
+    transform: translateX(300px) rotate(360deg);
+    background-color: brown;
+    color: white;
+  }
+  100% {
+    transform: translateX(500px) rotate(360deg);
+    background-color: brown;
+    color: white;
+  }
+}*/
+
+.block:hover {
+    background-color: green;
+    color: white;
+}
